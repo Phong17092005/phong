@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+}
+
+.banner img {
+  display: block;
+  width: 100%;
+  height: 250px;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: burlywood;
+  padding: 10px 0;
+}
+
+.vmenu {
+  padding-left: 400px;
+}
+.vmenu ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.vmenu ul li {
+  padding-right: 20px;
+}
+.vmenu ul li  a {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.user ul {
+  list-style-type: none;
+}
+
+.user ul li {
+  display: inline-block;
+  padding-right: 20px;
+  text-decoration: none;
+}
+.vmenu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.user ul li .mn:hover,
+.vmenu ul li .mn:hover {
+  background-color: #333;
+  color: white;
+  border-radius: 10px;
+}
+.user-options{
+    position: absolute;
+    right: 100px;
+    z-index: 1; 
+}
+.user ul {
+  list-style-type: none;
+  position: relative;
+}
+
+.user ul .options-list {
+  display: none;
+  position: absolute;
+  background: none;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #12952c;
+}
+.user ul .options-list a {
+  text-decoration: none;
+}
+.user ul .user-options:hover .options-list {
+  display: block;
+  width: 120px;
+  
+}
+.user ul ul a{
+  color: white;
+  font-size: 20px;
+
+}
+.user ul ul a:hover{
+  color: yellow;
+  font-size: 20px;
+
+}
+/* product */
+.product {
+  padding-top: 50px;
+  min-height: 900px;
+  float: left;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  background-image: url(../img/banner3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative; /* Cần thiết để định vị phần tử con */
+    z-index: 0;
+}
+.product .image:hover {
+  transform: scale(1.1);
+}
+.col-25 {
+  width: 25%;
+}
+.prod {
+  border-radius: 10px;
+  box-shadow: 0 0 100px gray;
+  margin: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+.prod > .name {
+  font-variant: small-caps;
+  color: white;
+}
+.prod > a > .image {
+  max-width: 90%;
+  height: 300px;
+  position: relative;
+  border-radius: 70px;
+}
+.prod > a {
+  position: relative;
+  color: yellow;
+  text-decoration: none;
+}
+.prod > .price {
+  bottom: 10px;
+  text-align: center;
+  font-family: Impact;
+  font-size: 15px;
+  color:aqua;
+}
+.add-to-cart {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+.add-to-cart:hover {
+  background-color: #e74c3c;
+}
+footer {
+  border-top: 5px double red;
+  color: red;
+  line-height: 50px;
+  background-color: #555555c3;
+  text-align: center;
+  clear: both;
+}

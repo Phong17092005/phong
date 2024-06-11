@@ -1,0 +1,16 @@
+.content{
+  min-height: 900px;
+  flex-wrap: wrap;
+  position: relative;
+  background-image: url(../img/banner3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+h1{
+    padding: 30px;
+    color: brown;
+}
+h2{
+    color: yellow;
+}
